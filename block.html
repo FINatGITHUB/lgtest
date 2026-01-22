@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="block.css">
+</head>
+<body>
+<div class="card">
+  <img src="icons/logo.png">
+  <h1>Website Blocked</h1>
+  <p>This site is restricted by your school network.</p>
+  <small id="url"></small>
+  <p id="reason"></p>
+</div>
+
+<script>
+const params = new URLSearchParams(location.search);
+document.getElementById("url").textContent = params.get("url");
+document.getElementById("reason").textContent = "Reason: " + params.get("reason");
+</script>
+</body>
+</html>

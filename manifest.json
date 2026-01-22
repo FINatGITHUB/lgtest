@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+  "name": "LG (Firefox)",
+  "version": "1.0",
+  "description": "School-managed DNS filter.",
+  "permissions": ["storage", "tabs", "webRequest", "webRequestBlocking", "<all_urls>"],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "48": "icons/logo.png",
+      "128": "icons/logo.png"
+    }
+  },
+  "icons": {
+    "48": "icons/logo.png",
+    "128": "icons/logo.png"
+  },
+  "applications": {
+    "gecko": {
+      "id": "dnsfilter@wellspringacademies.org.uk"
+    }
+  },
+  "web_accessible_resources": ["block.html", "block.css", "icons/logo.png"]
+}

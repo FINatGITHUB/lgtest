@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>DNS Privacy Control</title>
+<style>
+body { font-family: Arial; padding: 10px; width: 260px; }
+input, button { width: 100%; margin: 5px 0; }
+.status { font-size: 12px; margin-top: 8px; }
+</style>
+</head>
+<body>
+
+<h3>DNS Privacy Control</h3>
+
+<input type="password" id="pass" placeholder="Admin override password">
+<button id="override-btn">Enable Override</button>
+<div class="status" id="override-status"></div>
+
+<button id="view-log">View Blocked Log</button>
+<div class="status" id="log-status"></div>
+
+</body>
+<script src="popup.js"></script>
+</html>
